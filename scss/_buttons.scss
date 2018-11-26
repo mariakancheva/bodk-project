@@ -1,0 +1,40 @@
+.btn{
+    display: inline-block;
+    border: 3px solid var(--prime-color,#e81230);
+    border-radius: 5px;
+    background: none;
+    padding: 0.7em 2em;
+    color: var(--prime-color,#e81230);
+    text-decoration: none;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.pennant{
+    position: relative;
+    display: inline-block;
+    padding: 0.175em;
+    border: 1px solid var(--prime-color,#e81230);
+    border-radius: 50%;
+    cursor: default;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+.icon{
+    position: relative;
+    display: inline-block;
+    border: 1px solid var(--prime-color,#e81230);
+    border-radius: 50%;
+    color: var(--prime-color,#e81230);
+    font-size: 1.2em;
+    line-height: 2em;
+    text-decoration: none;
+    width: 2em;
+    height: 2em;
+
+}
+
+.icon:before{
+    display: inline-block;
+}

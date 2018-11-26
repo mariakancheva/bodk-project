@@ -6,12 +6,14 @@ var $ = require('gulp-load-plugins')();
 var path = {
 	SCSS_SRC	: './scss/**/*.scss',
 	SCSS_DST	: './css',
-	HTML_SRC	: ['./css/*.css','./*.html','./_post/*.*','./_layouts/*.*', './_includes/*.*'],
+	CSS_JKDST	: './docs/css',
+	HTML_SRC	: ['./*.html','./_post/*.*','./_layouts/*.*', './_includes/*.*'],
 }
 
-gulp.task('sass', function () {
+gulp.task('scss', function () {
 	
 	gulp.src( path.SCSS_SRC )
+	.pipe($.sourcemaps.init())
 	.pipe($.sass())
 	.pipe($.autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
 	.pipe($.size({ showFiles: true }))
@@ -19,16 +21,25 @@ gulp.task('sass', function () {
 	.pipe($.size({ showFiles: true }))
 	.pipe($.sourcemaps.write('map'))
 	.pipe(gulp.dest( path.SCSS_DST ))
+	.pipe(gulp.dest( path.CSS_JKDST ))
 	.pipe(browserSync.stream({ match: '**/*.css' }))
 	;
 	
 });
 
 gulp.task('jekyll', function () {
-	require('child_process').exec('jekyll build --baseurl=', {stdio: 'inherit'});
+	require('child_process').exec('jekyll build --baseurl=', {stdio: 'inherit'}, function(){
+		browserSync.reload();
+	});
 });
 
 gulp.task('serve', function() {
+	
+	/*browserSync.init({
+		proxy: {
+			target: "http://127.0.0.1:4000/"
+		}
+	});*/
 	
 	browserSync.init({
 		server: {
@@ -36,10 +47,10 @@ gulp.task('serve', function() {
 		}
 	});
 	
-	gulp.watch(path.SCSS_SRC, ['sass']);
+	gulp.watch(path.SCSS_SRC, ['scss']);
 	gulp.watch(path.HTML_SRC, ['jekyll']);
 	gulp.watch(path.HTML_SRC).on('change', browserSync.reload);
 	
 });
 
-gulp.task('default', ['jekyll','serve']);
+gulp.task('default', ['scss','jekyll','serve']);
