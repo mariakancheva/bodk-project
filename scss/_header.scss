@@ -3,14 +3,13 @@ body{
     margin: 1em;
 }
 
-header{
-    border-bottom: 3px solid var(--prime-color,#e81230); 
-}
 .header-top{
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
+    border-bottom: 3px solid var(--prime-color,#e81230);
+    padding: 1em; 
 }
 
 header ul{
@@ -28,38 +27,8 @@ header ul li{
 
 .home-text img{
     width: 100%;
-}
-
-.main-nav{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-    padding: 0.01em;
-}
-
-.main-nav ul{
-    margin: 0 1em;
-    font-size: 1.5em;
-}
-
-.main-nav li{
-    display: inline-block;
-    background: none;
-    padding: 0.5em 1em;
-    font-size: 1em;
-    text-align: center;
-}
-
-.main-nav li:hover a{
-    color: white;
     background: var(--prime-color,#e81230);
+    padding: 1em;
 }
 
-.main-nav a{
-    text-decoration: none;
-    color: var(--prime-color,#e81230);
-    vertical-align: middle;
-}
 
