@@ -1,38 +1,49 @@
-body{
-    background: var(--startPage-background-color,#FFF6F3);
-}
-
 body {
 	background: white;  
 }
-#page-wrap {
-  width: 80vw; 
-  margin: 1em auto;
-}
 
 .tabs{
-  height:100vh;
-  width:100vw;
+  height: 40em;
+  width: 60em;
   clear:both;
   position: relative;
   text-align:center;
   display:flex;
   justify-content:center;
+  margin: 0 auto;
 }
 .tab{
   float:left;
 }
+
+.tab p{
+    margin: 1em 0;
+    padding: 1em;
+    width: 100%;
+  }
+
 .tab label{
   position: relative;
   background:white;
-  color:red;
+  color: var(--prime-color,#e81230);
   padding: 1em;
   font-size: 2em;
-  margin-left:-1px;
+  display: flex;
 }
 
 .tab [type=radio]{
   display:none;
+}
+
+#aboutUs {
+  background: white;
+
+}
+
+#home_text{
+  background:var(--prime-color,#e81230);
+  padding: 2em;
+  margin: 5em auto;
 }
 
 .startPage-img{
@@ -40,7 +51,7 @@ body {
 }
 .content{
   position: absolute;
-  top: 4em;
+  top: 8em;
   left:0;
   right:0;
   bottom:0;

@@ -38,3 +38,10 @@
 .icon:before{
     display: inline-block;
 }
+
+.startPage-btn{
+    padding: 0.5em 1em;
+    color:var(--prime-color,#e81230);
+    border: 1.5px solid var(--prime-color,#e81230);
+    border-radius: 25px;
+}
