@@ -1,6 +1,8 @@
-body{
-    padding: 1em;
-    margin: 1em;
+header{
+    background-image: url('/images/FON.svg');
+    background-position: unset;
+    background-repeat: no-repeat;
+    z-index: -100;
 }
 
 .header-top{
@@ -10,6 +12,7 @@ body{
     align-items: center;
     border-bottom: 3px solid var(--prime-color,#e81230);
     padding: 1em; 
+   
 }
 
 header ul{
@@ -19,6 +22,7 @@ header ul{
 
 header ul li{
     display: inline-block;
+    margin: 0.1em;
 }
 
 .home-text{
@@ -30,5 +34,20 @@ header ul li{
     background: var(--prime-color,#e81230);
     padding: 1em;
 }
+
+.social-net{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.phone{
+    color: var(--prime-color,#e81230);
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+
+
 
 
