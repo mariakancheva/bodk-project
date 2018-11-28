@@ -1,14 +1,8 @@
 html{
     font: var(--font-size-initial,16px)/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    height: 100vh;
+  
 }
 
-/*body{
-    background-image: url('/images/FON.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-}*/
 
 h1, h2, h3, h4, h5, h6{
     line-height: 1.2;
@@ -37,6 +31,10 @@ li {
 
 a{
     text-decoration: none;
+}
+
+input, textarea, select, button, option {
+    font: var(--font-size-initial,16px)/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 
