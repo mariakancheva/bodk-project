@@ -1,5 +1,5 @@
 .tabs{
-  height: 40em;
+  height: 60em;
   width: 60em;
   clear:both;
   position: relative;
@@ -8,6 +8,7 @@
   justify-content:center;
   margin: 0 auto;
   background: white;
+  overflow: hidden;
 }
 .tab{
   float:left;
@@ -55,6 +56,8 @@
   background:white;
   margin:0 auto;
   padding:2em;
+  overflow: auto;
+  word-wrap: normal;
 }
 
 [type=radio]:checked ~ label{
