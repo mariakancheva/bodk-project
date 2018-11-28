@@ -1,0 +1,75 @@
+.contactForm{
+    text-align: center;
+}
+
+#contact-form{
+    width: 50%;
+    padding: 2em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#contact-form fieldset{
+    border: none;
+}
+
+#contact-form label{    
+    float: left;
+    color: #e81230;
+    display: none;
+
+}
+
+
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form select,  
+#contact-form textarea{
+    width: 100%;
+    background: white;
+    height: 3em;
+    resize: none;
+    border: none;
+    border-bottom: 1.35px solid var(--prime-color,#e81230);
+    margin: 1em 0;
+}
+
+#contact-form textarea{
+    resize: vertical;
+    height: 100px;
+}
+
+#contact-form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 2em;
+    margin: 1em 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-form input[type=text]:hover,
+#contact-form input[type=email]:hover,
+#contact-form select:hover,  
+#contact-form textarea:hover{
+    transition:border-color 0.3s ease-in-out;
+	border-bottom:1px solid #AAA;
+}
+
+#contact-form input[type=submit]:hover 
+{
+    transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+    background-color: #45a049;
+}
+
+#contact-form input[type=submit]:active { 
+    box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); 
+}
+
+#contact-form input:focus, 
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}

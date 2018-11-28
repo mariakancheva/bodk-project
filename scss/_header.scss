@@ -1,7 +1,9 @@
 .cover{
     background-image: url('/images/FON.svg');
-    background-position: unset;
+    background-position:center center;
+    background-origin: padding-box;
     background-repeat: no-repeat;
+    background-size: auto;
     z-index: -100;
     border-bottom: 3px solid var(--prime-color,#e81230);    
     display: flex;
