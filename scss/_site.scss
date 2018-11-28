@@ -1,0 +1,27 @@
+.wrapper{
+  display: grid;  
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header{
+  grid-area: header;
+  justify-self:center;
+  align-self: start;
+}
+  
+main{
+  grid-area: main;
+  justify-self:center;
+  align-self: start;
+  width: 90%;
+  padding: 2em;
+}
+
+footer{
+  grid-area: footer;
+  justify-self:center;
+  align-self: start;
+}

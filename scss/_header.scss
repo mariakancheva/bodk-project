@@ -1,18 +1,16 @@
-header{
+.cover{
     background-image: url('/images/FON.svg');
     background-position: unset;
     background-repeat: no-repeat;
     z-index: -100;
-}
-
-.header-top{
+    border-bottom: 3px solid var(--prime-color,#e81230);    
     display: flex;
     flex-direction: row;
     align-content: center;
     align-items: center;
-    border-bottom: 3px solid var(--prime-color,#e81230);
-    padding: 1em; 
-   
+    justify-content: space-between;
+    padding: 1em 4em; 
+    width: 100vw;
 }
 
 header ul{
@@ -26,7 +24,8 @@ header ul li{
 }
 
 .home-text{
-    margin: 0 auto;
+    margin: 0 0.1em;
+    text-align: center;
 }
 
 .home-text img{

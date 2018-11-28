@@ -1,0 +1,70 @@
+.tabs{
+  height: 45em;
+  width: 100%;
+  clear:both;
+  position: relative;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  margin: 0 auto;
+  background: white;
+  overflow: hidden;
+}
+
+  
+.tab p{
+  margin: 1em 0;
+  padding: 1em;
+  width: 100%;
+}
+  
+.tab label{
+  position: relative;
+  background:white;
+  color: var(--prime-color,#e81230);
+  padding: 0.1em;
+  font-size: 2em;
+  display: flex;
+}
+
+.tab-bodk-main label{
+  font-size: 1.2em;
+}
+
+.tab [type=radio]{
+  display:none;
+}
+
+.content{
+  position: absolute;
+  top: 8em;
+  left:0;
+  right:0;
+  bottom:0;
+  background:white;
+  width: 100%;
+
+}
+
+.content-bodk-main{
+  position: absolute;
+  top: 5em;
+  left:0;
+  right:0;
+  bottom:0;
+  background:white;
+  text-align: left;
+  width: 100%;
+}
+  
+[type=radio]:checked ~ label{
+    z-index:2;
+}
+
+[type=radio]:checked ~ label ~ .content{
+  z-index:1;
+}
+
+[type=radio]:checked ~ label ~ .content-bodk-main{
+  z-index:1;
+}
