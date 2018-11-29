@@ -1,4 +1,3 @@
-# bodk-project
+#bodk-project
+SoftUni - Web Fundamentals - CSS Advanced - ноември 2018 
 
-Thanks to:
-Photos by Luke Michael, Maja Petric and Rafael Corrêa on Unsplash
