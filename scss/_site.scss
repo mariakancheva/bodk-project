@@ -4,24 +4,29 @@
     "header"
     "main"
     "footer";
+
+    header{
+      grid-area: header;
+      justify-self:center;
+      align-self: start;
+    }
+
+    main{
+      grid-area: main;
+      justify-self:center;
+      align-self: start;
+      width: 100%;
+      padding: 2em;
+    }
+
+    footer{
+      grid-area: footer;
+      justify-self:center;
+      align-self: start;
+    }
 }
 
-header{
-  grid-area: header;
-  justify-self:center;
-  align-self: start;
-}
-  
-main{
-  grid-area: main;
-  justify-self:center;
-  align-self: start;
-  width: 100%;
-  padding: 2em;
-}
 
-footer{
-  grid-area: footer;
-  justify-self:center;
-  align-self: start;
+.donate-wrapper{
+
 }
