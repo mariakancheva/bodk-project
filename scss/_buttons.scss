@@ -27,12 +27,16 @@
     border: 1px solid var(--prime-color,#e81230);
     border-radius: 50%;
     color: var(--prime-color,#e81230);
-    font-size: 1.2em;
-    line-height: 2em;
     text-decoration: none;
     width: 2em;
     height: 2em;
-    text-align: center;
+    text-align: center; 
+    line-height: 2em;
+
+    @media screen and (min-width:500px){
+        font-size: 1.2em;
+       
+    }
 
 }
 
@@ -43,15 +47,19 @@
 .startPage-btn{
     padding: 0.5em 1em;
     color:var(--prime-color,#e81230);
-    border: 1.5px solid var(--prime-color,#e81230);
+    border: 1px solid var(--prime-color,#e81230);
     border-radius: 25px;
 }
 
 .icon-nav{
-    font-size:1.2em;
+   
     border: 1px solid var(--prime-color,#e81230);
     border-radius: 50%;
     color: var(--prime-color,#e81230);
     padding: 0.5em;
     text-align: center;
+
+    @media screen and (min-width:500px){
+        font-size: 1.2em;
+    }
 }

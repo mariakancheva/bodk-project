@@ -3,7 +3,6 @@
   width: 100%;
   clear:both;
   position: relative;
-  text-align:center;
   display:flex;
   justify-content:center;
   margin: 0 auto;
@@ -16,6 +15,7 @@
   padding: 1em;
   width: 100%;
   margin: 1em 0;
+  text-align: left;
 }
   
 .tab label{
@@ -24,7 +24,7 @@
   color: var(--prime-color,#e81230);
   padding: 0.1em;
   font-size: 2em;
-  display: flex;
+  display: grid;
 }
 
 .tab-bodk-main label{
@@ -43,6 +43,7 @@
   bottom:0;
   background:white;
   width: 100%;
+  text-align: center;
 
 }
 
@@ -67,4 +68,13 @@
 
 [type=radio]:checked ~ label ~ .content-bodk-main{
   z-index:1;
+}
+
+.tab-title{
+  font-size: 0.8em;
+  opacity:0;
+}
+
+.tab label:hover span{
+  opacity:1;
 }

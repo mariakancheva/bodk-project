@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 1em 4em; 
-    width: 80vw;
+    width: 100%;
 }
 
 header ul{
@@ -43,6 +43,7 @@ header ul li{
     flex-direction: column;
 
 }
+
 .phone{
     color: var(--prime-color,#e81230);
     font-size: 1.2em;

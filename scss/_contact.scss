@@ -3,10 +3,14 @@
 }
 
 #contact-form{
-    width: 50%;
+    width: 100%;
     padding: 2em;
     text-align: center;
     margin: 0 auto;
+
+    @media screen and (min-width:900px) {
+        width: 70%;
+    }
 }
 
 #contact-form fieldset{
