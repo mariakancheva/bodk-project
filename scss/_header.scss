@@ -15,6 +15,10 @@
     width: 100%;
 }
 
+header{
+    width: 100%;
+}
+
 header ul{
     list-style: none inside;
     padding: 0;
@@ -31,9 +35,9 @@ header ul li{
 }
 
 .home-text img{
-    width: 100%;
     background: var(--prime-color,#e81230);
     padding: 1em;
+    width: 100%;
 }
 
 .social-net{

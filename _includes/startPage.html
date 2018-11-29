@@ -5,7 +5,9 @@
         <label for="tab-1"><i class="icon fas fa-home"></i><span class="tab-title">Начало</span></label>
         <div class="content" id="aboutUs">
             <article>
-                <img id="home_text" src="{{ base.url }}/images/home_text.png" alt="Българска организация за доброволно кръводаряване">
+                <div >
+                    <img id="home_text" src="{{ site.baseurl }}/images/home_text.png" alt="Българска организация за доброволно кръводаряване">
+                </div>
             </article>
 
         </div>
@@ -15,14 +17,17 @@
         <input type="radio" id="tab-2" name="radio-group">
         <label for="tab-2"><i class="icon fas fa-sitemap"></i><span class="tab-title">БОДК</span></label>
         <div class="content">
-            <article >
-                <img src="{{ base.url }}/images/BODK-logo-2.png" alt="BODK logo" class="startPage-img">
-                <!-- <h2>За нас</h2> --> 
+            <article>
+                <div >
+                    <img src="{{ site.baseurl }}/images/BODK-logo-2.png" alt="BODK logo">
+
+                </div>
+                <!-- <h2>За нас</h2> -->
                 <p>Ние сме сдружение с нестопанска цел с дейност в обществена полза, със седалище гр. София, учредено
                     на 20.10.2010 година. Сдружението е с основна задача да насърчава и популяризира редовното,
                     анонимно, доброволно и необвързано с облаги кръводаряване на територията на Република България,
                     Европа и в световен мащаб. </p>
-                <a href="{{ base.url }}/about/" class="startPage-btn">Научете повече за нас </a>
+                <a href="{{ site.baseurl }}/about/" class="startPage-btn">Научете повече за нас </a>
 
             </article>
 
@@ -34,13 +39,17 @@
         <label for="tab-3"><i class="icon fas fa-heart"></i><span class="tab-title">Дари</span></label>
         <div class="content">
             <article id="donor">
-                <img src="{{ base.url }}/images/logo.png" alt="logo">
+                <div >
+                    <img src="{{ site.baseurl }}/images/logo.png" alt="logo">
+                </div>
+
                 <!-- <h2> За кръводарителите</h2>-->
                 <p>Kръводаряването е сред най-високо хуманните постъпки, които не могат и не би трябвало да бъдат
-                    оценявани в пари! Всеки ден поради катастрофи, операции, раждания и множество заболявания, повече от 500 човека в
+                    оценявани в пари! Всеки ден поради катастрофи, операции, раждания и множество заболявания, повече
+                    от 500 човека в
                     България имат животоспасяваща нужда от кръв и кръвни продукти, които се набавят САМО и ЕДИНСТВЕНО
                     чрез КРЪВОДАРЯВАНЕ! </p>
-                <a href="{{ base.url }}/donation/" class="startPage-btn">Научете повече за кръводаряването </a>
+                <a href="{{ site.baseurl }}/donation/" class="startPage-btn">Научете повече за кръводаряването </a>
 
             </article>
         </div>
@@ -51,11 +60,15 @@
         <label for="tab-4"><i class="icon fas fa-hands-helping"></i><span class="tab-title">Контакти</span></label>
         <div class="content">
             <article id="recipient">
-                <img src="{{ base.url }}/images/i-received-icon.png" alt="" class="startPage-img">
+                <div >
+                    <img src="{{ site.baseurl }}/images/i-received-icon.png" alt="">
+
+                </div>
+
                 <!--<h2> За тези които се нуждаят</h2> -->
                 <p> За всички, които търсят кръводарители за себе си или за свои близки – поради регулярна нужда,
                     поради предстояща операция, поради заболяване или инцидент. </p>
-                <a href="{{ base.url }}/contact/" class="startPage-btn">Свържете се с нас </a>
+                <a href="{{ site.baseurl }}/contact/" class="startPage-btn">Свържете се с нас </a>
             </article>
         </div>
     </div>
