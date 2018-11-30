@@ -1,5 +1,17 @@
 .tabs{
-  height: 45em;
+  height: 43em;
+  width: 100%;
+  clear:both;
+  position: relative;
+  display:flex;
+  justify-content:center;
+  margin: 0 auto;
+  background: white;
+  overflow: hidden;
+}
+
+.tabs-main{
+  height: 100em;
   width: 100%;
   clear:both;
   position: relative;

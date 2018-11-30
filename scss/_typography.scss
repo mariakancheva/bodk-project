@@ -1,6 +1,18 @@
 html{
-    font: var(--font-size-initial,16px)/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font: var(--font-size-initial,12px)/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   
+}
+
+@media screen and (min-width: 500px) {
+	html { font-size: var(--font-size-lv2, 14px); }
+}
+
+@media screen and (min-width: 700px) {
+	html { font-size: var(--font-size-lv3, 16px); }
+}
+
+@media screen and (min-width: 1600px) {
+	html { font-size: var(--font-size-lv4, 18px); }
 }
 
 
@@ -34,7 +46,7 @@ a{
 }
 
 input, textarea, select, button, option {
-    font: var(--font-size-initial,16px)/1.35 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font: inherit;
 }
 
 

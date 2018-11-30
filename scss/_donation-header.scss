@@ -1,21 +1,25 @@
-.donation-header{
-    
-}
-
 .donation-header-top{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     width: 100%;
     padding: 2em;
 
-    .donation-logo{
-        width: 40%;
+    .icon-nav{
+       color: var(--donation-background-color,rgb(255, 191, 191));
+       border: 1px solid var(--donation-background-color,rgb(255, 191, 191));
     }
-    img{
-        width: 50%;
-    }
+
+    .icon{
+        color: var(--donation-background-color,rgb(255, 191, 191));
+        border: 1px solid var(--donation-background-color,rgb(255, 191, 191));
+     }
+
+     .pennant{
+        border: 1px solid var(--donation-background-color,rgb(255, 191, 191));
+     }
+
 }
 
 

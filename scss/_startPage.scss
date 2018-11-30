@@ -10,5 +10,14 @@
   margin: 5em auto;
 }
 
+#recipient img{
+  width: 50%;
+
+  @media screen and (min-width:701px){
+    width: 25%;
+  }
+
+}
+
 
 
