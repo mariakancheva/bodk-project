@@ -20,6 +20,10 @@
         border: 1px solid var(--donation-background-color,rgb(255, 191, 191));
      }
 
+     @media screen and (max-width:600px){
+         display: block;
+     }
+
 }
 
 

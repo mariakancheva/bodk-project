@@ -12,7 +12,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 1em 4em; 
-    width: 100%;
+    width: 100%;   
+    
+    @media screen and (max-width:600px){
+        display: block;
+    }
 }
 
 header{
@@ -40,12 +44,16 @@ header ul li{
     width: 100%;
 }
 
-.social-net{
+.social-net,
+.site-nav{
     display: flex;
     align-content: center;
     align-items: center;
     flex-direction: column;
+}
 
+.site-nav{
+    margin-bottom:0.1em; 
 }
 
 .phone{
