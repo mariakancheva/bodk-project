@@ -5,6 +5,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 2em;
+    background: white;
 
     .icon-nav{
        color: var(--donation-background-color,rgb(255, 191, 191));
@@ -26,7 +27,6 @@
 
 }
 
-
 .donation-title{
     font-style: italic;
     text-align: center;
@@ -36,10 +36,16 @@
     display: block;
     background: var(--donation-background-color,rgb(255, 191, 191));
     text-align: center;
+    margin-top: -1em;
     ul li{
         list-style: none inside;
         padding: 0.1em;
         font-size: 1.2em;
+        border-bottom: 1px solid  var(--donation-prime-color,#BF5083) opacity 0;
+        
+        &:hover{
+            transform: border-bottom opacity 1;
+        }
 
         @media screen and (max-width:700px) {
             display: block;
@@ -52,5 +58,15 @@
         font-style: italic;
         color:black;
         text-decoration: none;
+
+       
     }
+}
+
+.back-to-top{
+    font-size: 2em;
+    display: inline;
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
 }
