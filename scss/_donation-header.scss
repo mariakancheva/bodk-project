@@ -39,12 +39,12 @@
     margin-top: -1em;
     ul li{
         list-style: none inside;
-        padding: 0.1em;
+        padding: 1em;
         font-size: 1.2em;
-        border-bottom: 1px solid  var(--donation-prime-color,#BF5083) opacity 0;
         
         &:hover{
-            transform: border-bottom opacity 1;
+            border-bottom: 1.5px solid  var(--donation-prime-color,#BF5083);
+            transform: scale(1.05);
         }
 
         @media screen and (max-width:700px) {

@@ -17,6 +17,10 @@
       align-self: start;
       width: 100%;
       padding: 2em;
+
+      @media screen and (max-width:600px){
+        padding: 0.1em;
+    }
     }
 
     footer{
