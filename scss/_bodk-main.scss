@@ -1,3 +1,84 @@
+.bodk-main{
+    width: 100%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: "nav content"
+                         "nav content";
+}
+
+
+
+.bodk-main-navigation{
+    grid-area: nav;
+    justify-self: center;
+    width: 100%;
+    ul{
+        list-style: none;
+
+        li{
+            display: block;
+            
+            & a{
+                color: black;
+            }
+
+            &:hover a{
+               color:var(--prime-color,#e81230);
+            }
+        }
+
+        
+    }
+}
+.bodk-main-content{
+    grid-area: content;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.bodk-main-img{
+   width: 65%;
+}
+
+.bodk-intro{
+    h3{
+        color: #e81230
+    }
+}
+
+
 .bodk-main-banner{
     width: 100%;
+    
 }
